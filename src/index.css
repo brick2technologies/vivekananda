@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* ============================= */
+/* Rosemire TrueType Fonts */
+/* ============================= */
+@font-face {
+  font-family: "Rosmie";
+  src: url("/src/assets/fonts/Rosmie-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rosmie";
+  src: url("/src/assets/fonts/Rosmie-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================= */
+/* Tailwind v4 Theme Tokens */
+/* ============================= */
+:root {
+  --font-rosemire: "Rosmie", sans-serif;
+}
+
+/* ============================= */
+/* Rosemire Utility Classes */
+/* ============================= */
+@layer utilities {
+  /* Rosemire Regular */
+  .rosmie-regular {
+    font-family: "rosmie", sans-serif;
+    font-weight: 400;
+  }
+
+  /* Rosemire Bold */
+  .rosmie-bold {
+    font-family: "rosmie", sans-serif;
+    font-weight: 700;
+  }
+}
